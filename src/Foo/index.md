@@ -1,13 +1,16 @@
 
-## Foo
-
-Demo:
+# Foo 组件文档
+----
+## 例子:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'shuliqiUI';
+import Foo from './index.tsx';
 
-export default () => <Foo title="First Demo" />;
+export default () => <Foo title="我是一个例子" />;
+
 ```
+## API 
+<API hideTitle src="./index.tsx"></API>
 
-More skills for writing demo: https://d.umijs.org/guide/basic#write-component-demo
+
