@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Foo from './index';
+import Foo from '../src/components/Foo/index';
 
 describe('<Foo />组件', () => {
   it('文案是否正确', () => {

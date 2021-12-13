@@ -5,7 +5,7 @@
 
 ```tsx
 import React from 'react';
-import Foo from './index.tsx';
+import { Foo } from "../es";
 
 export default () => <Foo title="我是一个例子" />;
 
