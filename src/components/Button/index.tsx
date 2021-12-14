@@ -64,7 +64,8 @@ const Button: React.FC<Props> = ({
   const btnClassName = cs({
     'slq--button': true,
     [`slq--button--${type}`]: true,
-    [`slq--button--${size}`]: true,
+    [`slq--button--type--${type}`]: true,
+    [`slq--button--size--${size}`]: true,
     'is--plain': plain,
     'is--round': round,
     [`is--disabled--${type}`]: disabled,

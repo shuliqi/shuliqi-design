@@ -8,7 +8,7 @@
   cursor: pointer;
 }
 
-.slq--button--default {
+.slq--button--type--default {
   background-color: @--white;
   border: 1px solid @--grey;
   &:hover {
@@ -18,14 +18,14 @@
   }
 }
 
-.slq--button--default.is--plain {
+.slq--button--type--default.is--plain {
   background-color: @--white;
   &:hover {
     border-color: @--theme-primary;
   }
 }
-.slq--button--default.is--plain.is--disabled--default,
-.slq--button--default.is--disabled--default {
+.slq--button--type--default.is--plain.is--disabled--default,
+.slq--button--type--default.is--disabled--default {
   background-color: @--white;
   cursor: not-allowed;
   opacity: 0.5;
@@ -37,7 +37,7 @@
 }
 
 .slq-button-type(@type) {
-  .slq--button--@{type} {
+  .slq--button--type--@{type} {
     color: @--white;
     background-color: ~'@{--button-@{type}}';
     border: 1px solid ~'@{--button-@{type}}';
@@ -118,7 +118,7 @@
 .slq-button-disabled(danger);
 
 .slq-button-size(@type) {
-  .slq--button.slq--button--@{type} {
+  .slq--button.slq--button--size--@{type} {
     min-height: ~'@{--button-size-@{type}}';
   }
 }

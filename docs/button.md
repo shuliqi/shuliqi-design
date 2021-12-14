@@ -14,9 +14,7 @@ export default () => {
   return (
     <>
       <div>
-        <Button type="default" style={{ margin: 5 }}>
-          default
-        </Button>
+        <Button style={{ margin: 5 }}>default</Button>
         <Button type="primary" style={{ margin: 5 }}>
           primary
         </Button>
@@ -85,6 +83,7 @@ export default () => {
 ```tsx
 import React from 'react';
 import { Button } from 'shuliqi-design';
+
 export default () => {
   return (
     <>
@@ -160,6 +159,7 @@ export default () => {
 ```tsx
 import React from 'react';
 import { Button } from 'shuliqi-design';
+
 export default () => {
   return (
     <div>
@@ -180,6 +180,7 @@ export default () => {
 ```tsx
 import React from 'react';
 import { Button } from 'shuliqi-design';
+
 export default () => {
   return (
     <>
