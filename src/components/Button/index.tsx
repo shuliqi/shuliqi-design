@@ -1,13 +1,44 @@
-import React from "react";
-import "./index.less"
+import React, { useEffect } from 'react';
+import classnames from 'classnames';
+import './index.less';
 
 interface Props {
-   type: 'default' | 'primary' | 'success' | 'info' | 'warning' | 'danger';
+  style?: object;
+  className?: string;
+  children?: any;
+  type?: 'default' | 'primary' | 'success' | 'info' | 'warning' | 'danger';
+  size?: 'small' | 'mini' | 'medium';
+  plain?: boolean;
+  round?: boolean;
+  disabled?: boolean;
 }
 
-const Button:React.FC<Props> = ({ type}) => {
+const Button: React.FC<Props> = ({
+  type = 'default',
+  size = 'small',
+  style = {},
+  className = null,
+  plain = false,
+  round = false,
+  disabled = false,
+  children,
+}) => {
+  const btnClassName = classnames({
+    'slq--button': true,
+    [`slq--button--${type}`]: true,
+    [`slq--button--${size}`]: true,
+    'is--plain': plain,
+    'is--round': round,
+    [`is--disabled--${type}`]: disabled,
+    [`${className}`]: className,
+  });
 
-  return <button className={`slq-default-button slq-${type}`}>按钮</button>
-}
+  useEffect(() => {}, []);
+  return (
+    <button type="button" style={style} className={btnClassName}>
+      {children}
+    </button>
+  );
+};
 
 export default Button;

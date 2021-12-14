@@ -1,31 +1,72 @@
-.slq-default-button {
+@import '../../../variables.less';
+.slq--button {
   box-sizing: border-box;
   min-height: 40px;
   padding: 1px 20px;
-  border: none;
+  color: @--button-text-color;
   border-radius: 4px;
+}
+
+.slq--button--default {
+  background-color: @--white;
+  border: 1px solid @--grey;
   &:hover {
-    background-color: #ecf5ff;
-    border: 1px solid #c6e2ff;
+    color: @--button-primary;
+    background-color: @--button-default;
+    border-color: rgba(@--button-primary, 0.3);
   }
 }
-.slq-primary {
-  background: #409eff;
+.slq--button--default.is--plain {
+  background-color: @--white;
   &:hover {
-    color: #fff;
-    background-color: #66b1ff;
-    border: 1px solid #66b1ff;
+    border-color: @--button-primary;
   }
 }
-.slq-success {
-  background: #67c23a;
+
+.slq-button-type(@type) {
+  .slq--button--@{type} {
+    color: @--white;
+    background-color: ~'@{--button-@{type}}';
+    border: 1px solid ~'@{--button-@{type}}';
+    &:hover {
+      background-color: rgba(color(~'@{--button-@{type}}'), 0.8);
+      border-color: rgba(color(~'@{--button-@{type}}'), 0.8);
+    }
+  }
 }
-.slq-info {
-  background: #909399;
+.slq-button-plain(@type) {
+  .slq--button--@{type}.is--plain {
+    color: ~'@{--button-@{type}}';
+    background-color: rgba(color(~'@{--button-@{type}}'), 0.2);
+    border-color: rgba(color(~'@{--button-@{type}}'), 0.8);
+    &:hover {
+      color: @--white;
+      background-color: ~'@{--button-@{type}}';
+      border-color: ~'@{--button-@{type}}';
+    }
+  }
 }
-.slq-warning {
-  background: #e6a23c;
-}
-.slq-danger {
-  background: #f56c6c;
+
+.slq-button-type(primary);
+.slq-button-plain(primary);
+.slq-button-disabled(primary);
+
+.slq-button-type(success);
+.slq-button-plain(success);
+.slq-button-disabled(success);
+
+.slq-button-type(info);
+.slq-button-plain(info);
+.slq-button-disabled(info);
+
+.slq-button-type(warning);
+.slq-button-plain(warning);
+.slq-button-disabled(warning);
+
+.slq-button-type(danger);
+.slq-button-plain(danger);
+.slq-button-disabled(danger);
+
+.is--round {
+  border-radius: @--button-border-radius-round;
 }
