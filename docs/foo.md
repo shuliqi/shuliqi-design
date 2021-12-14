@@ -6,7 +6,7 @@
 
 ```tsx
 import React from 'react';
-import { Foo } from '../es';
+import { Foo } from 'shuliqi-design';
 
 export default () => <Foo title="我是一个例子" />;
 ```

@@ -8,8 +8,7 @@
 
 ```tsx
 import React from 'react';
-import Button from '../src/components/Button/index';
-// import { Button } from "../es"
+import { Button } from 'shuliqi-design';
 
 export default () => {
   return (
@@ -85,7 +84,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import Button from '../src/components/Button/index';
+import { Button } from 'shuliqi-design';
 export default () => {
   return (
     <>
@@ -160,7 +159,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import Button from '../src/components/Button/index';
+import { Button } from 'shuliqi-design';
 export default () => {
   return (
     <div>
@@ -180,7 +179,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import Button from '../src/components/Button/index';
+import { Button } from 'shuliqi-design';
 export default () => {
   return (
     <>
