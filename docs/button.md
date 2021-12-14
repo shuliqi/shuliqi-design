@@ -247,4 +247,4 @@ export default () => {
 
 ## API
 
-<API hideTitle src="./index.tsx"></API>
+<API hideTitle src="../src/components/Button/index.tsx"></API>

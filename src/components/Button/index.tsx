@@ -3,9 +3,24 @@ import classnames from 'classnames';
 import './index.less';
 
 interface Props {
+  /**
+   * @description  节点样式
+   */
   style?: object;
+
+  /**
+   * @description 节点类名
+   */
   className?: string;
+
+  /**
+   * @description 子节点
+   */
   children?: any;
+
+  /**
+   * @description  按钮的类型
+   */
   type?:
     | 'default'
     | 'primary'
@@ -14,9 +29,25 @@ interface Props {
     | 'warning'
     | 'danger'
     | 'text';
+
+  /**
+   * @description  按钮的尺寸
+   */
   size?: 'small' | 'mini' | 'medium';
+
+  /**
+   * @description  是否为朴素按钮
+   */
   plain?: boolean;
+
+  /**
+   * @description  是否为圆形按钮
+   */
   round?: boolean;
+
+  /**
+   * @description  是否禁用
+   */
   disabled?: boolean;
 }
 

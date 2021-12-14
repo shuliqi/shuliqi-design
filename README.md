@@ -1,5 +1,5 @@
 # shuliqi-design
-# react UI 组组件库
+
 ## Getting Started
 
 Install dependencies,
