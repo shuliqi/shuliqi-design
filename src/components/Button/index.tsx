@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import classnames from 'classnames';
 import './index.less';
 
@@ -33,7 +33,6 @@ const Button: React.FC<Props> = ({
     [`${className}`]: className,
   });
 
-  useEffect(() => {}, []);
   return (
     <button type="button" style={style} className={btnClassName}>
       {children}
