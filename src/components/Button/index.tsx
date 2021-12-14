@@ -6,7 +6,14 @@ interface Props {
   style?: object;
   className?: string;
   children?: any;
-  type?: 'default' | 'primary' | 'success' | 'info' | 'warning' | 'danger';
+  type?:
+    | 'default'
+    | 'primary'
+    | 'success'
+    | 'info'
+    | 'warning'
+    | 'danger'
+    | 'text';
   size?: 'small' | 'mini' | 'medium';
   plain?: boolean;
   round?: boolean;
@@ -15,7 +22,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({
   type = 'default',
-  size = 'small',
+  size = 'default',
   style = {},
   className = null,
   plain = false,
