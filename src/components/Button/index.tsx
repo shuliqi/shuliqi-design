@@ -1,5 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
+import cs from 'classnames';
 import './index.less';
 
 interface Props {
@@ -61,7 +61,7 @@ const Button: React.FC<Props> = ({
   disabled = false,
   children,
 }) => {
-  const btnClassName = classnames({
+  const btnClassName = cs({
     'slq--button': true,
     [`slq--button--${type}`]: true,
     [`slq--button--${size}`]: true,
