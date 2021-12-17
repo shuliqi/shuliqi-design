@@ -35,7 +35,7 @@
     opacity: 0.5;
   }
 }
-
+/* 按钮类型 */
 .slq-button-type(@type) {
   .slq--button--type--@{type} {
     color: @--white;
@@ -52,6 +52,7 @@
     }
   }
 }
+/* 是否朴素按钮 */
 .slq-button-plain(@type) {
   .slq--button--@{type}.is--plain {
     color: ~'@{--button-@{type}}';
@@ -117,6 +118,7 @@
 .slq-button-plain(danger);
 .slq-button-disabled(danger);
 
+/* 按钮大小  */
 .slq-button-size(@type) {
   .slq--button.slq--button--size--@{type} {
     min-height: ~'@{--button-size-@{type}}';
@@ -126,10 +128,12 @@
 .slq-button-size(small);
 .slq-button-size(mini);
 
+/*  是否是圆形按钮*/
 .is--round {
   border-radius: @--button-border-radius-round;
 }
 
+/*  是否是文字按钮 */
 .slq--button--text {
   color: @--theme-primary;
   background: transparent;
